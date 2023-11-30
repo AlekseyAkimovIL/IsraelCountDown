@@ -9,7 +9,7 @@ const preloader = document.querySelector('#preloader');
 
 // Делаем расчеты
 const currentYear = new Date().getFullYear(); // 2020
-const nextYear = new Date(`Januar 7 2024 ${currentYear} 00:00:00`);
+const nextYear = new Date(`January 7 2024 ${currentYear} 00:00:00`);
 
 // Устанавливаем год на страницу
 year.innerText = 2024;

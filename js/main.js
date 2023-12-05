@@ -8,15 +8,16 @@ const countdown = document.querySelector('#countdown');
 const preloader = document.querySelector('#preloader');
 
 // Делаем расчеты
-const currentYear = new Date().getFullYear(); // 2020
-const nextYear = new Date(`January 7 2024 ${currentYear} 00:00:00`);
+const currentYear = new Date().getFullYear();
+const nextYear = new Date(`07 January ${currentYear+1} 00:00:00`);
 
 // Устанавливаем год на страницу
-year.innerText = 2024;
+year.innerText = nextYear.getFullYear();
 
 function updateCounter() {
    const currentTime = new Date();
    const diff = nextYear - currentTime;
+
 
    // Перевод в дни
    const daysLeft = Math.floor(diff / 1000 / 60 / 60 / 24);
